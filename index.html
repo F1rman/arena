@@ -175,15 +175,35 @@
 							 	<div class="count"><img src="images/video-views-eye-icon.svg"> <b>2.9k</b></div>
 							 </div>
  								<video id="video_trand_1" class="active" width="100%" height="100%" autoplay muted>
-							   <source src="video/mov_bbb.mp4" type="video/mp4">
-							   <source src="video/mov_bbb.ogg" type="video/ogg">
+							   <source src="video/1.mp4" type="video/mp4">
+							   <source src="video/1.ogg" type="video/ogg">
 							 		Your browser does not support the video tag.
 							 	</video>
 								<video id="video_trand_2" width="100%" height="100%"  muted>
-							   <source src="video/movie.mp4" type="video/mp4">
-							   <source src="video/movie.ogg" type="video/ogg">
+							   <source src="video/2.mp4" type="video/mp4">
+							   <source src="video/2.ogg" type="video/ogg">
 							 		Your browser does not support the video tag.
 							 	</video>
+								<video id="video_trand_3" width="100%" height="100%"  muted>
+								 <source src="video/3.mp4" type="video/mp4">
+								 <source src="video/3.ogg" type="video/ogg">
+									Your browser does not support the video tag.
+								</video>
+								<video id="video_trand_4" width="100%" height="100%"  muted>
+								 <source src="video/4.mp4" type="video/mp4">
+								 <source src="video/4.ogg" type="video/ogg">
+									Your browser does not support the video tag.
+								</video>
+								<video id="video_trand_5" width="100%" height="100%"  muted>
+								 <source src="video/5.mp4" type="video/mp4">
+								 <source src="video/5.ogg" type="video/ogg">
+									Your browser does not support the video tag.
+								</video>
+								<video id="video_trand_6" width="100%" height="100%"  muted>
+								 <source src="video/6.mp4" type="video/mp4">
+								 <source src="video/6.ogg" type="video/ogg">
+									Your browser does not support the video tag.
+								</video>
  	<div class="volume"><img src="images/volume.svg" alt=""></div>
 					   </div> </div>
 						 <div class="video_trand_1_info">
@@ -241,13 +261,33 @@
 							 	 <div class="count"><img src="images/video-views-eye-icon.svg"> <b>1.4k</b></div>
 							  </div>
 								<video id="video_Announcement_1" width="100%" height="100%"  muted>
-							   <source src="video/movie.mp4" type="video/mp4">
-							   <source src="video/movie.ogg" type="video/ogg">
+							   <source src="video/6.mp4" type="video/mp4">
+							   <source src="video/6.ogg" type="video/ogg">
 							 		Your browser does not support the video tag.
 							 	</video>
 								<video id="video_Announcement_2" class="active" width="100%" height="100%"  muted>
-							   <source src="video/mov_bbb.mp4" type="video/mp4">
-							   <source src="video/mov_bbb.ogg" type="video/ogg">
+							   <source src="video/5.mp4" type="video/mp4">
+							   <source src="video/5.ogg" type="video/ogg">
+							 		Your browser does not support the video tag.
+							 	</video>
+								<video id="video_Announcement_3" class="active" width="100%" height="100%"  muted>
+							   <source src="video/4.mp4" type="video/mp4">
+							   <source src="video/4.ogg" type="video/ogg">
+							 		Your browser does not support the video tag.
+							 	</video>
+								<video id="video_Announcement_4" class="active" width="100%" height="100%"  muted>
+							   <source src="video/3.mp4" type="video/mp4">
+							   <source src="video/3.ogg" type="video/ogg">
+							 		Your browser does not support the video tag.
+							 	</video>
+								<video id="video_Announcement_5" class="active" width="100%" height="100%"  muted>
+							   <source src="video/2.mp4" type="video/mp4">
+							   <source src="video/2.ogg" type="video/ogg">
+							 		Your browser does not support the video tag.
+							 	</video>
+								<video id="video_Announcement_6" class="active" width="100%" height="100%"  muted>
+							   <source src="video/1.mp4" type="video/mp4">
+							   <source src="video/1.ogg" type="video/ogg">
 							 		Your browser does not support the video tag.
 							 	</video>
 
@@ -632,13 +672,30 @@
 	<script type="text/javascript">
 	var aud1 = document.getElementById("video_trand_1");
 	var aud2 = document.getElementById("video_trand_2");
-	var aud3 = document.getElementById("video_Announcement_1");
-	var aud4 = document.getElementById("video_Announcement_2");
+	var aud3 = document.getElementById("video_trand_3");
+	var aud4 = document.getElementById("video_trand_4");
+	var aud5 = document.getElementById("video_trand_5");
+	var aud6 = document.getElementById("video_trand_6");
+
+	var aud7 = document.getElementById("video_Announcement_1");
+	var aud8 = document.getElementById("video_Announcement_2");
+	var aud9 = document.getElementById("video_Announcement_3");
+	var aud10 = document.getElementById("video_Announcement_4");
+	var aud11 = document.getElementById("video_Announcement_5");
+	var aud12 = document.getElementById("video_Announcement_6");
 		$("#video-container .volume img").click(()=>{
 			mute(aud1)
 			mute(aud2)
-			mute1(aud3)
-			mute1(aud4)
+			mute(aud3)
+			mute(aud4)
+			mute(aud5)
+			mute(aud6)
+			mute1(aud7)
+			mute1(aud8)
+			mute1(aud9)
+			mute1(aud10)
+			mute1(aud11)
+			mute1(aud12)
 			$("#video-container .volume img").attr('src',(index, attr)=>{
     return attr == 'images/volume_ok.svg' ? 'images/volume.svg' : 'images/volume_ok.svg';
 })
@@ -647,8 +704,16 @@
 			$("#video-containertwo .volume img").click(()=>{
 				mute1(aud1)
 				mute1(aud2)
-				mute(aud3)
-				mute(aud4)
+				mute1(aud3)
+				mute1(aud4)
+				mute1(aud5)
+				mute1(aud6)
+				mute(aud7)
+				mute(aud8)
+				mute(aud9)
+				mute(aud10)
+				mute(aud11)
+				mute(aud12)
 				$("#video-containertwo .volume img").attr('src',(index, attr)=>{
 	    return attr == 'images/volume_ok.svg' ? 'images/volume.svg' : 'images/volume_ok.svg';
 		})
@@ -657,10 +722,7 @@
 
 aud1.onended = function() {
     playVid(aud2)
-		$('.video_trand_1_info img').attr('src','images/trend-announce-top-create-img1.png')
-		$('.video_trand_1_info h5').text('The lover of pet assemble')
-		$('.video_trand_1_info h6').text('Victoria Kelley')
-		$('#video-container .count b').text('300')
+		change_info('images/trend-announce-top-create-img1.png','The lover of pet assemble','Victoria Kelley','300k','300','21')
 		html = `
 							 <h4>Sports</h4>
 							 <h4>Games</h4>
@@ -669,12 +731,8 @@ aud1.onended = function() {
 
 };
 aud2.onended = function() {
-    playVid(aud1)
-		$('.video_trand_1_info img').attr('src','images/video-viewer-guy.png')
-		$('.video_trand_1_info h5').text('Ontrick with a single hand')
-		$('.video_trand_1_info h6').text('Bradley Ford')
-		$('#video-container .count b').text('2.9k')
-
+    playVid(aud3)
+		change_info('images/video-viewer-guy.png','Ontrick with a single hand','Bradley Ford','2.9k','412','33')
 		html = ` <h4>hobbie</h4>
 					     <h4>Trick</h4>
 					     <h4>Games</h4>
@@ -685,24 +743,73 @@ aud2.onended = function() {
 };
 aud3.onended = function() {
     playVid(aud4)
-		$('.video_trand_2_info img').attr('src','images/video-viewer-guy.png')
-		$('.video_trand_2_info h5').text('Ontrick with a single hand')
-		$('.video_trand_2_info h6').text('Bradley Ford')
-		html = `<h4 class="four_days_left">4 days left&nbsp;&nbsp; <span></span> &nbsp;&nbsp;Sunday, Nov 08, 2020</h4>`;
-		$('.video_trand_2_info .chal_spo_gam_tric_con ').html(html)
-
-		$('#video-containertwo .count b').text('999')
+		change_info('images/trend-announce-top-create-img1.png','The lover of pet assemble','Victoria Kelley','300k','300','21')
+		html = `
+							 <h4>Sports</h4>
+							 <h4>Games</h4>
+							 <h4>Trick</h4>`;
+		$('.video_trand_1_info .chal_spo_gam_tric_con ').html(html)
 
 };
 aud4.onended = function() {
+    playVid(aud5)
+		change_info('images/video-viewer-guy.png','Ontrick with a single hand','Bradley Ford','2.9k','412','33')
+		html = ` <h4>hobbie</h4>
+					     <h4>Trick</h4>
+					     <h4>Games</h4>
+					     <h4>Sports</h4>`;
+		$('.video_trand_1_info .chal_spo_gam_tric_con ').html(html)
 
-	playVid(aud3)
-	$('.video_trand_2_info img').attr('src','images/video-viewer-girl.png')
-	$('.video_trand_2_info h5').text('The lover of pet assemble')
-	$('.video_trand_2_info h6').text('Celia Lawrence')
-	$('#video-containertwo .count b').text('1.4k')
-	html = `<h4 class="four_days_left">1 days left&nbsp;&nbsp; <span></span> &nbsp;&nbsp;Monday, Nov 11, 2020</h4>`;
-	$('.video_trand_2_info .chal_spo_gam_tric_con ').html(html)
+
+};
+aud5.onended = function() {
+    playVid(aud6)
+		change_info('images/trend-announce-top-create-img1.png','The lover of pet assemble','Victoria Kelley','300k','300','21')
+		html = `
+							 <h4>Sports</h4>
+							 <h4>Games</h4>
+							 <h4>Trick</h4>`;
+		$('.video_trand_1_info .chal_spo_gam_tric_con ').html(html)
+
+};
+aud6.onended = function() {
+    playVid(aud1)
+		change_info('images/video-viewer-guy.png','Ontrick with a single hand','Bradley Ford','2.9k','412','33')
+		html = ` <h4>hobbie</h4>
+					     <h4>Trick</h4>
+					     <h4>Games</h4>
+					     <h4>Sports</h4>`;
+		$('.video_trand_1_info .chal_spo_gam_tric_con ').html(html)
+};
+
+aud7.onended = function() {
+    playVid(aud8)
+change_info_2('images/video-viewer-guy.png','Ontrick with a single hand','Bradley Ford','999','1','Tuesday, Nov 02, 2020')
+};
+aud8.onended = function() {
+	playVid(aud9)
+	change_info_2('images/video-viewer-girl.png','The lover of pet assemble','Celia Lawrence','1.4k','1','Monday, Nov 11, 2020')
+
+};
+aud9.onended = function() {
+	playVid(aud10)
+	change_info_2('images/video-viewer-girl.png','The lover of pet assemble','Celia Lawrence','1.4k','1','Monday, Nov 11, 2020')
+
+};
+aud10.onended = function() {
+	playVid(aud11)
+	change_info_2('images/video-viewer-girl.png','The lover of pet assemble','Celia Lawrence','1.4k','1','Monday, Nov 11, 2020')
+
+};
+aud11.onended = function() {
+	playVid(aud12)
+	change_info_2('images/video-viewer-girl.png','The lover of pet assemble','Celia Lawrence','1.4k','1','Monday, Nov 11, 2020')
+
+};
+aud12.onended = function() {
+	playVid(aud7)
+	change_info_2('images/video-viewer-girl.png','The lover of pet assemble','Celia Lawrence','1.4k','1','Monday, Nov 11, 2020')
+
 };
 
 function playVid(vid) {
@@ -715,6 +822,22 @@ aud3.pause();
 aud3.currentTime = 0;
 aud4.pause();
 aud4.currentTime = 0;
+aud5.pause();
+aud5.currentTime = 0;
+aud6.pause();
+aud6.currentTime = 0;
+aud7.pause();
+aud7.currentTime = 0;
+aud8.pause();
+aud8.currentTime = 0;
+aud9.pause();
+aud9.currentTime = 0;
+aud10.pause();
+aud10.currentTime = 0;
+aud11.pause();
+aud11.currentTime = 0;
+aud12.pause();
+aud12.currentTime = 0;
     vid.play();
 		$('video').removeClass('active')
 		vid.classList.add("active");
@@ -729,22 +852,45 @@ function mute1(vid){
 	vid.muted = true;
 }
 
+function change_info(img,h5,h6,views,comments,likes){
+	$('.video_trand_1_info img').attr('src',img)
+	$('.video_trand_1_info h5').text(h5)
+	$('.video_trand_1_info h6').text(h6)
+	$('#video-container .count b').text(views)
+	$('.trending_announce_main_con .trending_announce_content2 .like_comm_shar_inner_con2 h3').text(comments)
+	$('.trending_announce_main_con .trending_announce_content2 .like_comm_shar_inner_con1 h3').text(likes)
+}
 
-
+function change_info_2(img,h5,h6,views,days,date){
+$('.video_trand_2_info img').attr('src',img)
+$('.video_trand_2_info h5').text(h5)
+$('.video_trand_2_info h6').text(h6)
+html = `<h4 class="four_days_left">${days} days left&nbsp;&nbsp; <span></span> &nbsp;&nbsp;${date}</h4>`;
+$('.video_trand_2_info .chal_spo_gam_tric_con ').html(html)
+$('#video-containertwo .count b').text(views)
+}
 $('.trending_announce_inner_con1 ul li').each((i,e)=>{
 	$(e).click(()=>{
 		if ($(e).index()==0) {
 			playVid(aud1)
-			mute1(aud3)
-			mute1(aud4)
+			mute1(aud7)
+			mute1(aud8)
+			mute1(aud9)
+			mute1(aud10)
+			mute1(aud11)
+			mute1(aud12)
 			$("#video-containertwo .volume img").attr('src',(index, attr)=>{
     	return attr == 'images/volume.svg' ? 'images/volume.svg' : 'images/volume.svg';
 	})
 }
 		else {
-			playVid(aud3)
+			playVid(aud7)
 			mute1(aud1)
 			mute1(aud2)
+			mute1(aud3)
+			mute1(aud4)
+			mute1(aud5)
+			mute1(aud6)
 			$("#video-container .volume img").attr('src',(index, attr)=>{
 		return attr == 'images/volume.svg' ? 'images/volume.svg' : 'images/volume.svg';
 	})
