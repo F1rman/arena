@@ -1637,7 +1637,7 @@ main_menubar navbar-nav a:hover img, main_menubar navbar-nav dropdown:hover img{
 .trending_announce_main_con .trending_announce_content2 .trending_announce_inner_con2{
   width: 384px;
   height: 661px;
-  background-image:url(../images/video-ipad-air-frame.png);
+  /* background-image:url(../images/video-ipad-air-frame.png); */
   background-position:center;
   background-repeat: no-repeat;
   -webkit-background-size:cover;
