@@ -869,8 +869,24 @@ html = `<h4 class="four_days_left">${days} days left&nbsp;&nbsp; <span></span> &
 $('.video_trand_2_info .chal_spo_gam_tric_con ').html(html)
 $('#video-containertwo .count b').text(views)
 }
+// var ts;
+// window.onscroll = function() {myFunction1()};
+// function myFunction1(){
+// 	ts =
+// 	console.log(ts)
+// }
+var h =$("#live_stats_click1").offset().top - 50
+$('.trending_announce_inner_con1 ul li').click(()=>{
+	if ($( document ).width() < 500) {
+		$('html, body').animate({
+scrollTop: h
+});
+	}
+})
 $('.trending_announce_inner_con1 ul li').each((i,e)=>{
+
 	$(e).click(()=>{
+
 		if ($(e).index()==0) {
 			playVid(aud1)
 			mute1(aud7)
