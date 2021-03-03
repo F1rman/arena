@@ -1744,7 +1744,6 @@ main_menubar navbar-nav a:hover img, main_menubar navbar-nav dropdown:hover img{
   -o-border-radius:10px;
   border-radius:10px;
 position: relative;
-  overflow: hidden;
 }
 @media(max-width:450px){
 .trending_announce_main_con .trending_announce_content2 .trending_announce_inner_con2 iframe,.trending_announce_main_con .trending_announce_content2 .trending_announce_inner_con2 #video-container{
@@ -1815,6 +1814,8 @@ position: absolute;
 opacity: 1;
 z-index: 1;
 display: none;
+left: 0;
+top: 0;
 }
 .trending_announce_main_con .trending_announce_content2 .trending_announce_inner_con2 #video-container video.active,
 .trending_announce_main_con .trending_announce_content2 .trending_announce_inner_con2 #video-containertwo video.active{
