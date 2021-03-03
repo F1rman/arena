@@ -1637,7 +1637,7 @@ main_menubar navbar-nav a:hover img, main_menubar navbar-nav dropdown:hover img{
 .trending_announce_main_con .trending_announce_content2 .trending_announce_inner_con2{
   width: 384px;
   height: 661px;
-  /* background-image:url(../images/video-ipad-air-frame.png); */
+  background-image:url(../images/video-ipad-air-frame.png);
   background-position:center;
   background-repeat: no-repeat;
   -webkit-background-size:cover;
@@ -1815,10 +1815,10 @@ left: 0;
 top: 0;
 width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .trending_announce_main_con .trending_announce_content2 .trending_announce_inner_con2 #video-container video.active,
 .trending_announce_main_con .trending_announce_content2 .trending_announce_inner_con2 #video-containertwo video.active{
-  z-index: 2;
   display: block;
 }
 .trending_announce_main_con .trending_announce_content2 .trending_announce_inner_con2 #video-container .views ,
