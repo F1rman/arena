@@ -204,7 +204,7 @@
 								 <source src="video/6.ogg" type="video/ogg">
 									Your browser does not support the video tag.
 								</video>
- 	<div class="volume"><img src="images/volume.svg" alt=""></div>
+ 							<div class="volume"><img src="images/volume.svg" alt=""></div>
 					   </div> </div>
 						 <div class="video_trand_1_info">
 					   	<div class="">
@@ -683,6 +683,49 @@
 	var aud10 = document.getElementById("video_Announcement_4");
 	var aud11 = document.getElementById("video_Announcement_5");
 	var aud12 = document.getElementById("video_Announcement_6");
+	var firstClick = 0;
+	$("#video-container").click(()=>{
+		if (firstClick<1) {
+			firstClick++
+			mute(aud1)
+			mute(aud2)
+			mute(aud3)
+			mute(aud4)
+			mute(aud5)
+			mute(aud6)
+			mute1(aud7)
+			mute1(aud8)
+			mute1(aud9)
+			mute1(aud10)
+			mute1(aud11)
+			mute1(aud12)
+			$("#video-container .volume img").attr('src',(index, attr)=>{
+		return attr == 'images/volume_ok.svg' ? 'images/volume.svg' : 'images/volume_ok.svg';
+	})
+}
+		console.log(firstClick)
+	})
+	$("#video-containertwo").click(()=>{
+		if (firstClick<1) {
+			firstClick++
+			mute1(aud1)
+			mute1(aud2)
+			mute1(aud3)
+			mute1(aud4)
+			mute1(aud5)
+			mute1(aud6)
+			mute(aud7)
+			mute(aud8)
+			mute(aud9)
+			mute(aud10)
+			mute(aud11)
+			mute(aud12)
+			$("#video-containertwo .volume img").attr('src',(index, attr)=>{
+		return attr == 'images/volume_ok.svg' ? 'images/volume.svg' : 'images/volume_ok.svg';
+	})
+}
+		console.log(firstClick)
+	})
 		$("#video-container .volume img").click(()=>{
 			mute(aud1)
 			mute(aud2)
