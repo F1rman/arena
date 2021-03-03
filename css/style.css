@@ -1816,6 +1816,8 @@ z-index: 1;
 display: none;
 left: 0;
 top: 0;
+width: 100%;
+    height: 100%;
 }
 .trending_announce_main_con .trending_announce_content2 .trending_announce_inner_con2 #video-container video.active,
 .trending_announce_main_con .trending_announce_content2 .trending_announce_inner_con2 #video-containertwo video.active{
